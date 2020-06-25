@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hydro">
+
+
+    <Spinner
+        android:padding="30dp"
+        android:id="@+id/dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Day"
+        android:entries="@color/colorPrimary">
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Logs"/>
+
+
+        <Button
+            android:id="@+id/btn_analytics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Analytics"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/minus"
+            android:onClick="countDE"
+            android:src="@drawable/ic_remove_circle_black_24dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:src="@drawable/glass"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/plus"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            android:layout_width="70dp"
+            android:onClick="countIN"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Glass"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Way To Go !"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="40dp"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Every glass of water counts."
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingBottom="50dp"/>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</LinearLayout>
